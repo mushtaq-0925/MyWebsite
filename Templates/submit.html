@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Submit - MyWebsite{% endblock %}
+
+{% block header %} 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                </ul>
+            </div>
+            <div class="navbar-text">
+                <a href="/submissions" class="btn btn-primary">Submissions</a>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<div class="submission-container">
+    <h2 class="submission-header">Submission Confirmation</h2>
+    <p class="submission-message">Thank you, <strong>{{name}}</strong>! We have received your email: <strong>{{email}} </strong> and Mobile no: <strong>{{phone}} </strong>.</p>
+</div>
+{% endblock %}
